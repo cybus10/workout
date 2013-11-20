@@ -39,7 +39,12 @@ a:link, a:hover, a:active, a:visited {
 .inline > input {
     width: 20px;
 }
-
+.sps {
+    width: 20px;
+}
+.spr {
+    margin-right: 30px;
+}
 .float_right{
     float: right;
 }
