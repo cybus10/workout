@@ -1,0 +1,49 @@
+/**
+#0776A0,
+#3AA6D0,
+#62B1D0,
+#FF8500
+*/
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background: #333333;
+    color: #62B1D0
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    height: 40px;
+    line-height: 40px;
+}
+
+.header .title {
+    color: #FFFFFF;
+}
+
+a:link, a:hover, a:active, a:visited {
+    color: #FF8500;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.inline {
+    display: inline-block;
+}
+
+.inline > input {
+    width: 20px;
+}
+
+.float_right{
+    float: right;
+}
+
+.float_left{
+    float: left;
+}

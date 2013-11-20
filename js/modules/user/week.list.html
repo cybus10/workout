@@ -1,0 +1,3 @@
+<div>
+    <div ng-repeat="week in schedule.weeks" class="list-row {{week.selected}}" ng-click="transitionTo('day', {id:user.id, sid:schedule.id, wid:week.id})">id:{{week.id}} {{week.name}}</div>
+</div>

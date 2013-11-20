@@ -1,0 +1,158 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "name": "Wes",
+            "schedules": [
+                {
+                    "id": "1",
+                    "name": "Four Week Cycle",
+                    "weeks": [
+                        {
+                            "id": "1",
+                            "name": "Week 1",
+                            "days": [
+                                {
+                                    "name": "Chest + Triceps",
+                                    "routines": [
+                                        {
+                                            "name": "Flat Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        },
+                                        {
+                                            "name": "Decline Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Back + Biceps",
+                                    "routines": [
+                                        {
+                                            "name": "Lat Pulldowns - Wide Grip",
+                                            "sets": [ 12, 10, 8, 6]
+                                        },
+                                        {
+                                            "name": "T Bar Rows",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                }
+                            ]
+
+                        },
+                        {
+                            "id": "2",
+                            "name": "week 2",
+                            "days": [
+                                {
+                                    "name": "Chest + Triceps",
+                                    "routines": [
+                                        {
+                                            "name": "Flat Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        },
+                                        {
+                                            "name": "Decline Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Back + Biceps",
+                                    "routines": [
+                                        {
+                                            "name": "Lat Pulldowns - Wide Grip",
+                                            "sets": [ 12, 10, 8, 6]
+                                        },
+                                        {
+                                            "name": "T Bar Rows",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                }
+                            ]
+
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Andy",
+            "schedules": [
+                {
+                    "id": "1",
+                    "name": "4 Week Cycle",
+                    "weeks": [
+                        {
+                            "week": "2013-10-20",
+                            "days": [
+                                {
+                                    "name": "Chest + Triceps",
+                                    "routines": [
+                                        {
+                                            "name": "Flat Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        },
+                                        {
+                                            "name": "Decline Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Back + Biceps",
+                                    "routines": [
+                                        {
+                                            "name": "Lat Pulldowns - Wide Grip",
+                                            "sets": [ 12, 10, 8, 6]
+                                        },
+                                        {
+                                            "name": "T Bar Rows",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                }
+                            ]
+
+                        },
+                        {
+                            "week": "2013-10-27",
+                            "days": [
+                                {
+                                    "name": "Chest + Triceps",
+                                    "routines": [
+                                        {
+                                            "name": "Flat Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        },
+                                        {
+                                            "name": "Decline Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Back + Biceps",
+                                    "routines": [
+                                        {
+                                            "name": "Lat Pulldowns - Wide Grip",
+                                            "sets": [ 12, 10, 8, 6]
+                                        },
+                                        {
+                                            "name": "T Bar Rows",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                }
+                            ]
+
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

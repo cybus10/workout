@@ -1,0 +1,8 @@
+<div>
+    <div ng-repeat="routine in day.routines" class="list-row">
+        <div class="routine-title">id:{{routine.id}} {{routine.name}}</div>
+        <div class="rep inline" ng-repeat="set in routine.sets">
+            <input type="text">
+        </div>
+    </div>
+</div>
