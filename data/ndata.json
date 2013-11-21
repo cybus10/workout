@@ -1,0 +1,222 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "name": "Wes",
+            "schedules": [
+                "1"
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Andy"
+        }
+    ],
+    "schedules": [
+        {
+            "id": "1",
+            "name": "Four Week Cycle",
+            "weeks": [ "1", "2"]
+        }
+    ],
+    "weeks": [
+        {
+            "id": "1",
+            "name": "Week 1",
+            "days": ["1", "2"]
+        },
+        {
+            "id": "2",
+            "name": "Week 2"
+        }
+    ],
+    "days": [
+        {
+            "id": "1",
+            "name": "Chest + Triceps",
+            "routines": ["1", "2"]
+        },
+        {
+            "id": "2",
+            "name": "Back + Biceps"
+        }
+    ],
+    "routines": [
+        {
+            "id": "1",
+            "name": "Flat Bench Press - smith",
+            "sets": [12, 10, 8, 6]
+        },
+        {
+            "id": "2",
+            "name": "Decline Bench Press - smith",
+            "sets": [12, 10, 8, 6]
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "name": "Wes",
+            "schedules": [
+                {
+                    "id": "1",
+                    "name": "Four Week Cycle",
+                    "weeks": [
+                        {
+                            "id": "1",
+                            "name": "Week 1",
+                            "days": [
+                                {
+                                    "id": "1",
+                                    "name": "Chest + Triceps",
+                                    "routines": [
+                                        {
+                                            "id": "1",
+                                            "name": "Flat Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        },
+                                        {
+                                            "id": "2",
+                                            "name": "Decline Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "2",
+                                    "name": "Back + Biceps",
+                                    "routines": [
+                                        {
+                                            "id": "3",
+                                            "name": "Lat Pulldowns - Wide Grip",
+                                            "sets": [ 12, 10, 8, 6]
+                                        },
+                                        {
+                                            "id": "4",
+                                            "name": "T Bar Rows",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                }
+                            ]
+
+                        },
+                        {
+                            "id": "2",
+                            "name": "week 2",
+                            "days": [
+                                {
+                                    "name": "Chest + Triceps",
+                                    "routines": [
+                                        {
+                                            "id": "5",
+                                            "name": "Flat Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        },
+                                        {
+                                            "id": "6",
+                                            "name": "Decline Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Back + Biceps",
+                                    "routines": [
+                                        {
+                                            "id": "7",
+                                            "name": "Lat Pulldowns - Wide Grip",
+                                            "sets": [ 12, 10, 8, 6]
+                                        },
+                                        {
+                                            "id": "8",
+                                            "name": "T Bar Rows",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                }
+                            ]
+
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Andy",
+            "schedules": [
+                {
+                    "id": "1",
+                    "name": "4 Week Cycle",
+                    "weeks": [
+                        {
+                            "week": "2013-10-20",
+                            "days": [
+                                {
+                                    "name": "Chest + Triceps",
+                                    "routines": [
+                                        {
+                                            "name": "Flat Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        },
+                                        {
+                                            "name": "Decline Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Back + Biceps",
+                                    "routines": [
+                                        {
+                                            "name": "Lat Pulldowns - Wide Grip",
+                                            "sets": [ 12, 10, 8, 6]
+                                        },
+                                        {
+                                            "name": "T Bar Rows",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                }
+                            ]
+
+                        },
+                        {
+                            "week": "2013-10-27",
+                            "days": [
+                                {
+                                    "name": "Chest + Triceps",
+                                    "routines": [
+                                        {
+                                            "name": "Flat Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        },
+                                        {
+                                            "name": "Decline Bench Press - smith",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Back + Biceps",
+                                    "routines": [
+                                        {
+                                            "name": "Lat Pulldowns - Wide Grip",
+                                            "sets": [ 12, 10, 8, 6]
+                                        },
+                                        {
+                                            "name": "T Bar Rows",
+                                            "sets": [12, 10, 8, 6]
+                                        }
+                                    ]
+                                }
+                            ]
+
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
