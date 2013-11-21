@@ -1,20 +1,5 @@
-.clearfix:after {
-    content: ".";
-    display: block;
+.clearAfter:after {
+    content: "";
+    display: table;
     clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-}
-
-.clearfix {
-    display: inline-block;
-}
-
-html[xmlns] .clearfix {
-    display: block;
-}
-
-* html .clearfix {
-    height: 1%;
 }

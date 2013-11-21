@@ -1,23 +1,16 @@
 <div>
-    <div class="routine-title">
-        <div class="float_left">Rountines</div>
-        <div class="float_right spr">Reps</div>
-        <div class="clearfix"></div>
-    </div>
     <div ng-repeat="routine in day.routines" class="list-row">
-        <div class="routine-title">
             <div class="float_left">id:{{routine.id}} {{routine.name}}</div>
-            <div>
-                <div class="float_right">
-                    <div class="inline" ng-repeat="set in routine.sets">{{set}}</div>
-                    <div></div>
+            <div class="float_right">
+                <div class="routine-sets-title">
+                    <div class="inline set-spacing" ng-repeat="set in routine.sets">{{set}}</div>
+                </div>
+                <div class="routine-sets">
                     <div class="inline" ng-repeat="set in routine.sets">
                         <input type="text">
                     </div>
-                    <div></div>
                 </div>
             </div>
-            <div class="clearfix"></div>
         </div>
     </div>
 </div>
