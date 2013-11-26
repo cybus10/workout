@@ -26,7 +26,7 @@ controllers.user = function ($stateProvider) {
             resolve: resolve,
             templateUrl: 'js/modules/user/schedule.list.html',
             controller: function Schedules($scope, $state, $stateParams, model) {
-                $scope.user = model.getUser($stateParams.id);
+                $scope.schedule = model.getSchedule($stateParams.id);
                 $scope.setTitle("Schedules");
             }
         })
@@ -36,32 +36,25 @@ controllers.user = function ($stateProvider) {
             templateUrl: 'js/modules/user/week.list.html',
             controller: function Weeks($scope, $state, $stateParams, model) {
                 $scope.setTitle("Weeks");
-                $scope.user = model.getUser($stateParams.id);
-                $scope.schedule = model.find($scope.user.schedules, $stateParams.sid);
+                $scope.week = model.getWeek($stateParams.id);
             }
         })
         .state('day', {
             url: 'user/:id/schedule/:sid/week/:wid/days',
             resolve: resolve,
             templateUrl: 'js/modules/user/day.list.html',
-            controller: function Weeks($scope, $state, $stateParams, model) {
+            controller: function Days($scope, $state, $stateParams, model) {
                 $scope.setTitle("Day");
-                $scope.user = model.getUser($stateParams.id);
-                $scope.schedule = model.find($scope.user.schedules, $stateParams.sid);
-                $scope.week = model.find($scope.schedule.weeks, $stateParams.wid);
-                $scope.days = model.find($scope.week.days, $stateParams.did);
+                $scope.day = model.getDay($stateParams.id);
             }
         })
         .state('routine', {
             url: 'user/:id/schedule/:sid/week/:wid/day/:did/routines',
             resolve: resolve,
             templateUrl: 'js/modules/user/routine.list.html',
-            controller: function Weeks($scope, $state, $stateParams, model) {
+            controller: function Routines($scope, $state, $stateParams, model) {
                 $scope.setTitle("Routine");
-                $scope.user = model.getUser($stateParams.id);
-                $scope.schedule = model.find($scope.user.schedules, $stateParams.sid);
-                $scope.week = model.find($scope.schedule.weeks, $stateParams.wid);
-                $scope.day = model.find($scope.week.days, $stateParams.did);
-            }
+                $scope.routine = model.getRoutine($stateParams.id);
+                         }
         });
 };

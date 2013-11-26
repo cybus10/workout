@@ -9,7 +9,11 @@
         },
         {
             "id": "2",
-            "name": "Andy"
+            "name": "Andy",
+            "schedules": [
+                "1"
+            ]
+
         }
     ],
     "schedules": [
@@ -27,7 +31,9 @@
         },
         {
             "id": "2",
-            "name": "Week 2"
+            "name": "Week 2",
+            "days": ["1", "2"]
+
         }
     ],
     "days": [
@@ -38,7 +44,9 @@
         },
         {
             "id": "2",
-            "name": "Back + Biceps"
+            "name": "Back + Biceps",
+            "routines": ["1", "2"]
+
         }
     ],
     "routines": [
@@ -53,7 +61,7 @@
             "sets": [12, 10, 8, 6]
         }
     ],
-    "users": [
+    "old": [
         {
             "id": "1",
             "name": "Wes",
