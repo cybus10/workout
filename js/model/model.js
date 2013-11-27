@@ -16,19 +16,19 @@ angular.module('workout', []).factory('model', ['$resource', '$filter', function
                 schedules.length = 0;
                 weeks.length = 0;
                 angular.forEach(result.users, function (user) {
-                    users.push(user)
+                    users.push(user);
                 });
                 angular.forEach(result.routines, function (routine) {
-                    routines.push(routine)
+                    routines.push(routine);
                 });
                 angular.forEach(result.days, function (day) {
-                    days.push(day)
+                    days.push(day);
                 });
                 angular.forEach(result.schedules, function (schedule) {
-                    schedules.push(schedule)
+                    schedules.push(schedule);
                 });
                 angular.forEach(result.weeks, function (week) {
-                    weeks.push(week)
+                    weeks.push(week);
                 });
                 callback && callback();
 
@@ -80,6 +80,13 @@ angular.module('workout', []).factory('model', ['$resource', '$filter', function
         function getWeek(id) {
             return find(weeks, id);
         }
+        function getWorkoutDays() {
+            return workoutDays;
+        }
+
+        function getWorkoutDay(userId, dateId) {
+            return find(workoutDays, id);
+        }
 
         function find(list, id) {
             return $filter('filter')(list, {id: id})[0];
@@ -96,6 +103,8 @@ angular.module('workout', []).factory('model', ['$resource', '$filter', function
         exports.getDay = getDay;
         exports.getRoutines = getRoutines;
         exports.getRoutine = getRoutine;
+        exports.getWorkoutDays = getWorkoutDays;
+        exports.getWorkoutDay = getWorkoutDay;
 
         exports.find = find;
 
