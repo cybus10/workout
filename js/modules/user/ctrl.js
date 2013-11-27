@@ -21,12 +21,21 @@ controllers.user = function ($stateProvider) {
                 $scope.setTitle("Home");
             }
         })
+        .state('workoutDays', {
+            url: 'user/:id/workoutDays',
+            resolve: resolve,
+            templateUrl: 'js/modules/user/workoutDays.list.html',
+            controller: function workoutDays($scope, $state, $stateParams, model) {
+                $scope.workoutDays = model.getWorkoutDays();
+                $scope.setTitle("WorkoutDays");
+            }
+        })
         .state('schedules', {
             url: 'user/:id/schedules',
             resolve: resolve,
             templateUrl: 'js/modules/user/schedule.list.html',
             controller: function Schedules($scope, $state, $stateParams, model) {
-                $scope.schedule = model.getSchedule($stateParams.id);
+                $scope.schedules = model.getSchedules();
                 $scope.setTitle("Schedules");
             }
         })
@@ -36,7 +45,7 @@ controllers.user = function ($stateProvider) {
             templateUrl: 'js/modules/user/week.list.html',
             controller: function Weeks($scope, $state, $stateParams, model) {
                 $scope.setTitle("Weeks");
-                $scope.week = model.getWeek($stateParams.id);
+                $scope.weeks = model.getWeeks($stateParams.id);
             }
         })
         .state('day', {
@@ -45,7 +54,7 @@ controllers.user = function ($stateProvider) {
             templateUrl: 'js/modules/user/day.list.html',
             controller: function Days($scope, $state, $stateParams, model) {
                 $scope.setTitle("Day");
-                $scope.day = model.getDay($stateParams.id);
+                $scope.days = model.getDays($stateParams.id);
             }
         })
         .state('routine', {
@@ -54,7 +63,7 @@ controllers.user = function ($stateProvider) {
             templateUrl: 'js/modules/user/routine.list.html',
             controller: function Routines($scope, $state, $stateParams, model) {
                 $scope.setTitle("Routine");
-                $scope.routine = model.getRoutine($stateParams.id);
+                $scope.routines = model.getRoutines($stateParams.id);
                          }
         });
 };
