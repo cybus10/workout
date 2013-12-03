@@ -6,9 +6,9 @@
             "schedules": [
                 "1"
             ],
-            "workoutDay": [
+            "workout": [
                 {
-                    "date": "120",
+                    "date": "2013/Nov/12",
                     "wid": "1",
                     "sid": "1",
                     "did": "1",

@@ -21,13 +21,13 @@ controllers.user = function ($stateProvider) {
                 $scope.setTitle("Home");
             }
         })
-        .state('workoutDays', {
-            url: 'user/:id/workoutDays',
+        .state('workouts', {
+            url: 'user/:id/workouts',
             resolve: resolve,
-            templateUrl: 'js/modules/user/workoutDays.list.html',
-            controller: function workoutDays($scope, $state, $stateParams, model) {
-                $scope.workoutDays = model.getWorkoutDays();
-                $scope.setTitle("WorkoutDays");
+            templateUrl: 'js/modules/user/workouts.list.html',
+            controller: function workout($scope, $state, $stateParams, model) {
+                $scope.workoutDays = model.getWorkout();
+                $scope.setTitle("Workouts");
             }
         })
         .state('schedules', {
