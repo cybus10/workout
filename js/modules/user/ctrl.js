@@ -25,11 +25,21 @@ controllers.user = function ($stateProvider) {
             url: 'user/:id/workouts',
             resolve: resolve,
             templateUrl: 'js/modules/user/workouts.list.html',
-            controller: function workout($scope, $state, $stateParams, model) {
-                $scope.workoutDays = model.getWorkout();
+            controller: function Workouts($scope, $state, $stateParams, model) {
+                $scope.workouts = model.getWorkouts($stateParams.id);
                 $scope.setTitle("Workouts");
             }
         })
+        .state('workout', {
+            url: 'user/:id/workout/:woid',
+            resolve: resolve,
+            templateUrl: 'js/modules/user/workout.list.html',
+            controller: function Workouts($scope, $state, $stateParams, model) {
+                $scope.workout = model.getWorkout($stateParams.id, $stateParams.woid);
+                $scope.setTitle("Workout");
+            }
+        })
+
         .state('schedules', {
             url: 'user/:id/schedules',
             resolve: resolve,

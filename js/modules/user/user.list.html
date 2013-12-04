@@ -1,3 +1,14 @@
 <div>
-    <div ng-repeat="user in users" class="list-row {{user.selected}}" ng-click="transitionTo('schedules', user)">id:{{user.id}} {{user.name}}</div>
+    <div>
+        <div ng-repeat="user in users" class="list-row {{user.selected}}" >
+            <span>id:{{user.id}} {{user.name}}</span>
+
+            <div class="float_right">
+                <a href="" class="" ng-click="transitionTo('workouts', user)">Workouts</a>
+                <a href="" class="" ng-click="transitionTo('schedules', user)">Schedule</a>
+            </div>
+        </div>
+
+    </div>
+
 </div>

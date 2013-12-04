@@ -100,3 +100,23 @@ a:link, a:hover, a:active, a:visited {
     background: linear-gradient(to bottom,  #000000 0%,#ffffff 4%,#666666 50%,#000000 51%,#000000 90%,#cccccc 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
 }
+
+.buttons {
+    float:left;
+    min-height: 16px;
+    width: 73px;
+    height: 40px;
+    line-height: 34px;
+}
+
+.button {
+    display: block;
+    border: 1px solid #000000;
+    overflow: hidden;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #333333; /* Old browsers */
+}

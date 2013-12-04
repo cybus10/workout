@@ -80,12 +80,12 @@ angular.module('workout', []).factory('model', ['$resource', '$filter', function
         function getWeek(id) {
             return find(weeks, id);
         }
-        function getWorkouts() {
-            return workouts;
+        function getWorkouts(userId) {
+            return getUser(userId).workouts;
         }
 
-        function getWorkout(userId, dateId) {
-            return find(workouts, id);
+        function getWorkout(userId, woid) {
+            return find(getWorkouts(userId), woid);
         }
 
         function find(list, id) {
