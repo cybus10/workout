@@ -26,6 +26,7 @@ controllers.user = function ($stateProvider) {
             resolve: resolve,
             templateUrl: 'js/modules/user/workouts.list.html',
             controller: function Workouts($scope, $state, $stateParams, model) {
+                $scope.user = model.getUser($stateParams.id);
                 $scope.workouts = model.getWorkouts($stateParams.id);
                 $scope.setTitle("Workouts");
             }
@@ -35,6 +36,7 @@ controllers.user = function ($stateProvider) {
             resolve: resolve,
             templateUrl: 'js/modules/user/workout.list.html',
             controller: function Workouts($scope, $state, $stateParams, model) {
+                $scope.user = model.getUser($stateParams.id);
                 $scope.workout = model.getWorkout($stateParams.id, $stateParams.woid);
                 $scope.setTitle("Workout");
             }

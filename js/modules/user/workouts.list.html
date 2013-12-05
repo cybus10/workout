@@ -1,6 +1,6 @@
 <div>
 
-    <div ng-repeat="workout in workouts" class="list-row {{user.selected}}"
-         ng-click="transitionTo('workout', {id:user.id, date:workout.date})">day id: {{workout.sid}}  routine id: {{workout.rid}} workout time: {{workout.date}}
+    <div data-ng-repeat="workout in workouts" class="list-row {{user.selected}}"
+         data-ng-click="transitionTo('workout', {id:user.id, woid:workout.id})">day id: {{workout.did}}  routine id: {{workout.rid}} workout time: {{workout.date}}
     </div>
 </div>
