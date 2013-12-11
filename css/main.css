@@ -40,12 +40,12 @@ a:link, a:hover, a:active, a:visited {
 }
 
 .inline > input {
-    width: 30px;
+    width: 23px;
     border: 1px solid #000000;
     padding: 2px;
 }
 .set-spacing {
-    width: 36px;
+    width: 20px;
     text-align: center;
 }
 .float_right{

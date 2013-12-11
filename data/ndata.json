@@ -15,21 +15,48 @@
                     "sid": "1",
                     "did": "1",
                     "rid": "1",
-                    "doneSets": [
+                    "completedSets": [
                         {
-                            "reps": 12,
+                            "sets": 12,
                             "weight": 150
                         },
                         {
-                            "reps": 10,
+                            "sets": 10,
                             "weight": 150
                         },
                         {
-                            "reps": 8,
+                            "sets": 8,
                             "weight": 145
                         },
                         {
-                            "reps": 6,
+                            "sets": 6,
+                            "weight": 145
+                        }
+                    ]
+                },
+                {
+                    "id": "1",
+                    "date": "2013-11-13 12:00:00am",
+                    "woid": "1",
+                    "weid": "1",
+                    "sid": "1",
+                    "did": "1",
+                    "rid": "1",
+                    "completeSets": [
+                        {
+                            "sets": 12,
+                            "weight": 150
+                        },
+                        {
+                            "sets": 10,
+                            "weight": 150
+                        },
+                        {
+                            "sets": 8,
+                            "weight": 145
+                        },
+                        {
+                            "sets": 6,
                             "weight": 145
                         }
                     ]
@@ -82,12 +109,48 @@
         {
             "id": "1",
             "name": "Flat Bench Press - smith",
-            "sets": [12, 10, 8, 6]
-        },
+            "sets":[
+            {
+                "reps": 12,
+                "weight": 150
+            },
+            {
+                "reps": 10,
+                "weight": 150
+            },
+            {
+                "reps": 8,
+                "weight": 145
+            },
+            {
+                "reps": 6,
+                "weight": 145
+            }
+            ]
+         },
         {
             "id": "2",
             "name": "Decline Bench Press - smith",
-            "sets": [12, 10, 8, 6]
+            "sets": [
+              {
+              "reps": 12,
+              "weight": 160
+             },
+             {
+                "reps": 10,
+               "weight": 160
+             },
+              {
+                "reps": 12,
+                "weight": 160
+             },
+            {
+                "reps": 10,
+                "weight": 160
+              }
+            ]
         }
-    ]
+
+   ]
+
 }

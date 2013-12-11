@@ -3,12 +3,15 @@
             <div class="float_left">id:{{routine.id}} {{routine.name}}</div>
             <div class="float_right">
                 <div class="routine-sets-title">
-                    <div class="inline set-spacing" ng-repeat="set in routine.sets">{{set}}</div>
+                    <div class="inline set-spacing" ng-repeat="set in routine.sets">{{sets}}</div>
                 </div>
                 <div class="routine-sets">
                     <div class="inline" ng-repeat="set in routine.sets">
-                        <input type="text">
+                        <input type="number" name="reps"/>
+                        <input type="number" name="weight "/>
                     </div>
+
+                    <input type="submit" value="Submit" />
                 </div>
             </div>
         </div>

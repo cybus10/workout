@@ -1,6 +1,16 @@
 <div>
 
-    <div class="list-row {{user.selected}}">
+    <div ng-repeat="workout in workouts" class="list-row {{user.selected}}">
      Routine :{{workout.rid}}  Workout time: {{workout.date}}<br> completed : {{workout.doneSets}}
-    </div>
+    <div class="routine-sets">
+        <div >
+            <div class="inline set-spacing" ng-repeat="doneSet in workout.doneSets">{{reps}} {{weight}}</div>
+        </div>
+        <div class="inline" ng-repeat="doneSet in workout.doneSets">
+            <input type="text" name="weight"/>
+            <input type="text" name="sets"/>
+        </div>
+        <input type="submit" value="Submit" />
+        </div>
+</div>
 </div>
